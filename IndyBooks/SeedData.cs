@@ -865,8 +865,22 @@ namespace IndyBooks
                 Price = 30.00M,
                 Year = "1994"
             });
-
-
+            context.Books.Add(new Book
+            {
+                Title = "How to Pass Bit285",
+                Author = "Max",
+                Edition = "1",
+                Price = 606.30M,
+                Year = "2019"
+            });
+            context.Books.Add(new Book
+            {
+                Title = "How to Pass College",
+                Author = "Keith",
+                Edition = "1",
+                Price = 10606.30M,
+                Year = "2019"
+            });
             await context.SaveChangesAsync();
         }
     }
